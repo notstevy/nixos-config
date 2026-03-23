@@ -11,7 +11,7 @@
       ./modules/libraries.nix
       ./devices/npc.nix
       ./modules/kanata.nix
-      ./modules/niri.nix
+#      ./modules/niri.nix
       ./modules/hyprland.nix
       ./modules/xdg.nix
       ./modules/environment.nix
