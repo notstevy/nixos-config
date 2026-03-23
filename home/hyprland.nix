@@ -5,7 +5,7 @@
   ];
   
   home.packages = with pkgs; [
-    inputs.hyprcap.packages.${pkgs.stdenv.hostPlatform.system}.default
+    hyprcap
     gpu-screen-recorder-gtk # GUI app
 
     # screenshot

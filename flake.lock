@@ -256,26 +256,6 @@
         "type": "github"
       }
     },
-    "hyprcap": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1774043138,
-        "narHash": "sha256-Ov40dxEPYel0vV+D4Cdxflumx28wYoWibcWZckS6T0A=",
-        "owner": "notstevy",
-        "repo": "hyprcap-nix",
-        "rev": "7f7a463603afeb7e2859f206754b4eb45fc98792",
-        "type": "github"
-      },
-      "original": {
-        "owner": "notstevy",
-        "repo": "hyprcap-nix",
-        "type": "github"
-      }
-    },
     "hyprcursor": {
       "inputs": {
         "hyprlang": [
@@ -751,7 +731,6 @@
         "helium": "helium",
         "helix": "helix",
         "home-manager": "home-manager",
-        "hyprcap": "hyprcap",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
         "hytale-launcher": "hytale-launcher",

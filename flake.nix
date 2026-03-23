@@ -47,10 +47,6 @@
       url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprcap = {
-      url = "github:notstevy/hyprcap-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = { self, nixpkgs, home-manager, nix4vscode, dolphin-overlay, hyprland, caelestia-shell, ... }@inputs: # nixos-unstable
@@ -86,7 +82,16 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; }; # pkgs-unstable
         modules = [
-          { nixpkgs.overlays = [ dolphin-overlay.overlays.default ]; }
+           {
+            nixpkgs.config.allowUnfree = true;
+            nixpkgs.config.android_sdk.accept_license = true;
+            nixpkgs.overlays = [
+              dolphin-overlay.overlays.default
+              (final: prev: {
+                hyprcap = prev.callPackage ./overlays/hyprcap/default.nix {};
+              })
+            ];
+          }
           ./configuration.nix
           home-manager.nixosModules.home-manager
           {
