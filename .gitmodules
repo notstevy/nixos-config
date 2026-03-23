@@ -1,0 +1,3 @@
+[submodule "overlays/helium-browser"]
+	path = overlays/helium-browser
+	url = git@github.com:schembriaiden/helium-browser-nix-flake.git
