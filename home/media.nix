@@ -8,6 +8,8 @@
     inkscape
     gimp
 
+    blender
+
     obs-studio
     kdePackages.kdenlive
 
