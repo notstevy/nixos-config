@@ -37,6 +37,9 @@
         --prefix LD_LIBRARY_PATH : "${pkgs.lib.makeLibraryPath [ pkgs.libsecret pkgs.glib ]}"
     '')
 
+    # youtube
+    yt-dlp
+
     # Development: Web
     yarn
     nodejs
@@ -59,6 +62,14 @@
     rustup
     llvmPackages.lldb
     pkg-config
+
+    # Development: Go
+    go
+    libcap
+    gopls
+    delve
+    golangci-lint
+    golangci-lint-langserver
 
     # Development: PHP
     php
