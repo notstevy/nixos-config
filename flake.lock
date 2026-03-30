@@ -679,6 +679,23 @@
         "type": "github"
       }
     },
+    "noriskclient-pr": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1769877211,
+        "narHash": "sha256-csySeUJKIm7mzd/hSa3mZfRgNbEFU6S9WEvRjGKU1fY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c1663a924aaf3a1c785a6e278171b2db75e4a10e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "pull/485665/head",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat_2",
@@ -736,6 +753,7 @@
         "hytale-launcher": "hytale-launcher",
         "nix4vscode": "nix4vscode",
         "nixpkgs": "nixpkgs_2",
+        "noriskclient-pr": "noriskclient-pr",
         "zen-browser": "zen-browser"
       }
     },

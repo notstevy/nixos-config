@@ -47,6 +47,10 @@
       url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    noriskclient-pr = {
+      url = "github:NixOS/nixpkgs/pull/485665/head";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, nix4vscode, dolphin-overlay, hyprland, caelestia-shell, ... }@inputs: # nixos-unstable
@@ -89,6 +93,7 @@
               dolphin-overlay.overlays.default
               (final: prev: {
                 hyprcap = prev.callPackage ./overlays/hyprcap/default.nix {};
+                
               })
             ];
           }
