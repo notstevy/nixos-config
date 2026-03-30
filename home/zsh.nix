@@ -24,6 +24,7 @@
     #zprof.enable = true;
 
     syntaxHighlighting.enable = true;
+    # eval "$(niri completions zsh)"
     initContent = ''
       # Skip compaudit for faster startup (only if you trust your system)
       #ZSH_DISABLE_COMPFIX=true
@@ -32,7 +33,6 @@
       zstyle ':completion:*' use-cache on
       zstyle ':completion:*' cache-path "$HOME/.zsh/cache"i
       
-      eval "$(niri completions zsh)"
       eval "$(direnv hook zsh)"
     '';
   
